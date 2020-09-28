@@ -11,15 +11,31 @@ matrix:
     - os: linux
       dist: trusty
       compiler: gcc
-      	  arch: ppc64le
-
-
+      	
+        #Add power support
+- os: linux
+      dist: trusty
+      compiler: gcc
+	  arch: ppc64le
+- os: linux
+      dist: trusty
+      compiler: clang
+	  arch: ppc64le
+    
     - os: linux
       dist: trusty
       compiler: clang
-      	  arch: ppc64le
-
-
+      	
+        #Add power support
+- os: linux
+      dist: trusty
+      compiler: gcc
+	  arch: -ppc64le
+- os: linux
+      dist: trusty
+      compiler: clang
+	  arch: -ppc64le
+  
 #    - os: linux
 #      compiler: musl-gcc
 #      addons:
